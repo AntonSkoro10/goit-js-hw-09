@@ -1,5 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+console.log(SimpleLightbox)
 
 
 
@@ -101,10 +102,10 @@ images.forEach(image => {
 gallery.appendChild(fragment)
 
 
-const lightbox = new SimpleLightbox('ul.gallery', {
+const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
-})
+});
 
 
 
